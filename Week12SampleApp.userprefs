@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{DC9945ED-E51B-4628-8B31-0DD041DE5EDA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week12SampleApp/Models/WeatherItemModel.cs">
+    <Files>
+      <File FileName="Week12SampleApp.UnitTests/Test.cs" Line="1" Column="1" />
+      <File FileName="Week12SampleApp/ViewModels/MainPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="Week12SampleApp/Models/WeatherItemModel.cs" Line="6" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../Git/LuxorUniversal/Luxor.Droid/Gestures/TouchEffect.cs" line="210" offsetX="658" offsetY="3172" expression="pointerLocation.Y" liveUpdate="True" />
+    <Watch file="../../Git/LuxorUniversal/Luxor.Droid/Gestures/TouchEffect.cs" line="209" offsetX="658" offsetY="3119" expression="pointerLocation.X" liveUpdate="True" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.ItemProperties.Week12SampleApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1754883D-4809-467C-AE42-9B978E4F6890">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.Week12SampleApp.iOS>
+  <MultiItemStartupConfigurations />
+</Properties>
