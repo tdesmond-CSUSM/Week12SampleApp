@@ -28,8 +28,12 @@ namespace Week12SampleApp.ViewModels
             set { SetProperty(ref _weatherCollection, value); }
         }
 
-        public MainPageViewModel()
+        INavigationService _navigationService;
+
+        public MainPageViewModel(INavigationService navigationService)
         {
+            _navigationService = navigationService;
+
             RemoveWeatherItemCommand = new DelegateCommand<WeatherItem>(RemoveWeatherItem);
 
         }

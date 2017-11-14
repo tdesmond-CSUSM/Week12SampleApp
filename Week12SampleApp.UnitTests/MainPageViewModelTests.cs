@@ -2,6 +2,8 @@
 using System;
 using static Week12SampleApp.Models.WeatherItemModel;
 using Week12SampleApp.ViewModels;
+using Prism.Navigation;
+using Moq;
 
 namespace Week12SampleApp.UnitTests
 {
@@ -10,10 +12,13 @@ namespace Week12SampleApp.UnitTests
     {
         MainPageViewModel mainPageViewModel;
 
+        Mock<INavigationService> navigationServiceMock;
+
         [SetUp]
         public void Init()
         {
-            mainPageViewModel = new MainPageViewModel();
+            navigationServiceMock = new Mock<INavigationService>();
+            mainPageViewModel = new MainPageViewModel(navigationServiceMock.Object);
         }
 
         [Test]
