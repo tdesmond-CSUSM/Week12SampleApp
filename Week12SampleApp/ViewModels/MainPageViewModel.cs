@@ -12,7 +12,8 @@ namespace Week12SampleApp.ViewModels
 {
     public class MainPageViewModel : BindableBase, INavigationAware
     {
-        public DelegateCommand<WeatherItem> RemoveWeatherItemCommand { get; set;  }
+        public DelegateCommand<WeatherItem> RemoveWeatherItemCommand { get; set; }
+        public DelegateCommand NavigatePageCommand { get; set; }
 
         private string _title;
         public string Title
@@ -35,7 +36,12 @@ namespace Week12SampleApp.ViewModels
             _navigationService = navigationService;
 
             RemoveWeatherItemCommand = new DelegateCommand<WeatherItem>(RemoveWeatherItem);
+            NavigatePageCommand = new DelegateCommand(NavigatePage);
+        }
 
+        private void NavigatePage()
+        {
+            _navigationService.NavigateAsync("NavigationSamplePage");
         }
 
         private void RemoveWeatherItem(WeatherItem itemToDelete)

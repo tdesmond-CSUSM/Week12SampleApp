@@ -30,7 +30,7 @@ namespace Week12SampleApp.UnitTests
 
             mainPageViewModel.RemoveWeatherItemCommand.Execute(weatherItemToDelete);
 
-            CollectionAssert.DoesNotContain(mainPageViewModel.WeatherCollection, 
+            CollectionAssert.DoesNotContain(mainPageViewModel.WeatherCollection,
                                             weatherItemToDelete);
         }
 
@@ -40,6 +40,16 @@ namespace Week12SampleApp.UnitTests
             mainPageViewModel.Title = string.Empty;
             mainPageViewModel.OnNavigatedTo(null);
             Assert.AreEqual("Week 12 Sample App", mainPageViewModel.Title);
+        }
+
+        [Test]
+        public void TestNavigatePageCommandCallsNavigateAsync()
+        {
+            navigationServiceMock.Setup(ns => ns.NavigateAsync(It.IsAny<string>(), It.IsAny<NavigationParameters>(),
+                                                             It.IsAny<bool?>(), It.IsAny<bool>()));
+            mainPageViewModel.NavigatePageCommand.Execute();
+            navigationServiceMock.Verify(ns=> ns.NavigateAsync("NavigationSamplePage", It.IsAny<NavigationParameters>(),
+                                          It.IsAny<bool?>(), It.IsAny<bool>()), Times.Once());
         }
     }
 }

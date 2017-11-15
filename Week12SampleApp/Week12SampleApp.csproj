@@ -38,12 +38,19 @@
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="Models\WeatherItemModel.cs" />
     <Compile Include="ViewModels\EasyTestPageViewModel.cs" />
+    <Compile Include="ViewModels\NavigationSamplePageViewModel.cs" />
+    <Compile Include="Views\NavigationSamplePage.xaml.cs">
+      <DependentUpon>NavigationSamplePage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NavigationSamplePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

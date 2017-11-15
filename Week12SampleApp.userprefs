@@ -1,18 +1,20 @@
 ﻿<Properties StartupConfiguration="{DC9945ED-E51B-4628-8B31-0DD041DE5EDA}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Week12SampleApp.UnitTests/EasyTestPageViewModelTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week12SampleApp.UnitTests/MainPageViewModelTests.cs">
     <Files>
-      <File FileName="Week12SampleApp.UnitTests/MainPageViewModelTests.cs" Line="35" Column="52" />
-      <File FileName="Week12SampleApp/ViewModels/MainPageViewModel.cs" Line="48" Column="10" />
+      <File FileName="Week12SampleApp.UnitTests/MainPageViewModelTests.cs" Line="1" Column="1" />
+      <File FileName="Week12SampleApp/ViewModels/MainPageViewModel.cs" Line="39" Column="69" />
       <File FileName="Week12SampleApp/Models/WeatherItemModel.cs" Line="78" Column="39" />
-      <File FileName="Week12SampleApp/ViewModels/EasyTestPageViewModel.cs" Line="24" Column="10" />
+      <File FileName="Week12SampleApp/ViewModels/EasyTestPageViewModel.cs" Line="30" Column="9" />
       <File FileName="Week12SampleApp.UnitTests/EasyTestPageViewModelTests.cs" Line="45" Column="2" />
+      <File FileName="Week12SampleApp/ViewModels/NavigationSamplePageViewModel.cs" Line="1" Column="1" />
+      <File FileName="Week12SampleApp/Views/NavigationSamplePage.xaml" Line="10" Column="1" />
+      <File FileName="Week12SampleApp Status" />
+      <File FileName="Week12SampleApp/Views/NavigationSamplePage.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Week12SampleApp" expanded="True">
-            <Node name="Week12SampleApp.UnitTests" selected="True" />
-          </Node>
+          <Node name="Week12SampleApp" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
